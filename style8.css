@@ -1,0 +1,35 @@
+@charset "utf-8"; /*인코딩 한글로 코드를 변경하기*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th{
+    padding: 10px;
+}
+td{
+    padding: 15px;
+    text-align: left; /* 콘텐츠를 가운데 정렬 */
+}
+
+
+/* table 각각을 따로 디자인하고 싶다면
+<table class="새로운 이름">으로 정의해주고
+클래스 선택자를 사용할 때는 .(점) 찍어서 표현 */
+.Table_caption{
+    border: 10px solid yellow;
+    border-collapse: collapse;
+}
+.Table_figcaption{
+    border: 20px ridge red; /*ridge는 액자형식*/
+    border-collapse: separate;
+}
+.Table_exe{
+    border: 3px double blue;
+    border-collapse: collapse;
+}

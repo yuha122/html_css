@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블(표) 열에 색깔을 넣는 colgroup, col 태그 연습</title>
+    <link rel="stylesheet" type="text/css" href="./css/style10.css"
+</head>
+
+<body>
+    <h2>colgroup 연습</h2>
+    <table>
+        <colgroup>
+            <col style="background-color: silver">
+            <!-- 건너뛰고 싶은 열은 <col>로 비워줌 -->
+            <col>
+            <!-- <col style="background-color: aqua;"> -->
+            <col style="background-color: lavender;">
+            <col style="background-color: pink;">
+        </colgroup>
+        <tr><th>제목1</th><td>1행2열</td><td style="color: purple;">1행3열</td><td style="color: hotpink;">1행4열</td></tr>
+        <tr><th>제목2</th><td style="background-color: aqua;">1행2열</td><td>1행3열</td><td>1행4열</td></tr>
+        <tr><th>제목3</th><td>1행2열</td><td>1행3열</td><td>1행4열</td></tr>
+    </table>   
+    
+    <br><hr><br>
+    <h2>col span="  " 연습</h2>
+    <table>
+        <colgroup>
+            <col>
+            <!-- 여러 열을 동시에 하고 싶을 떄는 <col span="갯수" style=" "> -->
+            <col span="2" style="background-color: lavender;">
+            <col>
+        </colgroup>
+        <tr>
+            <td>1</td><td>2</td><td>3</td><td>4</td>
+        </tr>
+        <tr>
+            <td>5</td><td>6</td><td>7</td><td>8</td>
+        </tr>
+    </table>
+
+</body>
+</html>

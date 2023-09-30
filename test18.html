@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지맵 연습1</title>
+</head>
+<body>
+    <h3><b><u>이벤트 이미지 3개 URL 연결하기</u></b></h3>
+    <img src="./img/event.jpg" alt="서점 이미지" usemap="#event" />
+    <map name="event">
+        <area shape="circle" coords="327, 241, 50" href="http://www.naver.com" target="_blank"> <!--shape="circle"이면 coords="중심좌표, 반지름"-->
+        <area shape="rect" coords="10, 1536, 700, 1556" href="http://www.daum.net" target="_blank">
+        <area shape="rect" coords="386, 1285, 527, 1460" href="http://www.kyobobook.co.kr/" target="_blank">
+    </map>
+    
+</body>
+</html>

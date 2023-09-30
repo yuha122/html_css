@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표(table) 작성 연습</title>
+
+    <!--테이블 경계선을 표현하고자 할 때 style을 적용함-->
+    <style>
+        /* 초기화 세팅은 항상 무조건 꼭 적어줘야 함 */
+        /* 전체선택자 에스타리스크(*)를 이용해서 부모요소 초기화  */
+        /* margin: 경계선과 페이지까지의 거리 */
+        /* padding: 글자와 경계선까지의 거리 */
+        /* width(너비):  */
+        *{ 
+            margin: 1px;
+            padding: 3px;
+            width: auto;
+            box-sizing: border-box;
+        }
+        table, td, th{
+            border: 2px solid black;  /* 테두리선 */
+            border-collapse: collapse;  
+            padding: 5px 10px; /* 위아래 좌우 */
+            /* padding: 5px 10px 15px 20px 위 오른쪽 아래 왼쪽순으로 */
+        }
+    </style>
+
+</head>
+<body>
+    <h2>테이블 연습</h2>
+    <table style="border: 2px solid blue;">
+        <tr> <!--행-->
+            <th>쎌1</th> <!--행의 제목-->
+            <td><mark>1행1열</mark></td>
+            <td><span style="color: blue;">1행2열</td>
+            <td>1행3열</td>
+        </tr>
+        <tr>
+            <th>쎌2</th>
+            <td><sup>2행1열</sup></td>
+            <td>2행2열</td>
+            <td><b><u><span style="color: red;">2행3열</u></b></td>
+        </tr>
+        <tr>
+            <th>쏄3</th>
+            <td>3행1열</td>
+            <td>3행2열</td>
+            <td>3행3열</td>
+        </tr>
+    </table>
+    <hr>
+    <!--셀 병합 연습-->
+    <!--1. 가로로 병합: colspan="자신의 셀 포함해 합치고자 하는 셀 갯수"
+        2. 세로로 병합: rowspan="자신의 셀 포함해 합치고자 하는 셀 갯수"
+        3. 밀려서 지우고자 하는 셀은 주석문 처리해주면 됨-->
+    <h2>셀 병합 연습</h2>
+    <table>
+        <tr>
+            <th rowspan="4">1행1열</th>
+            <td colspan="2">1행2열</td>
+            <td rowspan="2">1행3열</td>
+            <td>1행4열</td>
+         </tr>
+        <tr>
+            <th>2행1열</th>
+            <td rowspan="2">2행2열</td>
+            <td>2행3열</td>
+            <!-- <td>2행4열</td> -->
+        </tr>
+        <tr>
+            <th>3행1열</th>
+            <td>3행2열</td>
+            <td>3행3열</td>
+            <!-- <td>3행4열</td> -->
+        </tr>
+        <tr>
+            <th>4행1열</th>
+            <td>4행2열</td>
+            <td>4행3열</td>
+            <td>4행4열</td>
+        </tr>
+    </table>
+    <hr>
+    <!--달력 표 연습-->
+    <h2>달력 표 연습</h2>
+    <table>
+        <tr>
+            <th colspan="7"><mark>2023년 7월</mark></th>
+        </tr>
+        <tr>
+            <th><span style=color:red;">일</span></th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th><span style=color:blue;">토</span></th>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td>30</td><td>1</td>
+        </tr>
+        <tr>
+            <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+        </tr>
+        <tr>
+            <td>9</td><td>10</td><td>11</td><td>12</td><td><u><b>13</b></u></td><td><u><b>14</b></u></td><td>15</td>
+        </tr>
+        <tr>
+            <td>16</td><td><u><b>17</b></u></td><td><u><b>18</b></u></td><td><u><b>19</b></u></td><td>20</td><td>21</td><td>22</td>
+        </tr>
+        <tr>
+            <td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td>
+        </tr>
+        <tr>
+            <td>30</td><td>31</td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+    </table>
+    <hr>
+    <!--복습 문제-->
+    <!--표를 만들 때 기본 세팅은 모든 행에서 열 갯수가 동일해야 함. 셀 병합으로 추후에 바꿔줘야 함.-->
+    <h2>이름표 만들기</h2>
+    <table>
+        <tr>
+            <th>이름</th><td>홍길동</td><th>연락처</th><td>010-1234-5678</td>
+        </tr>
+        <tr>
+            <th>주소</th><td colspan="3">서울시 종로구 효제동 315-1 딘상시 4층</td>
+        </tr>
+        <tr>
+            <th>자기소개</th><td colspan="3">프론트 웹 개발에 열공하고 있습니다.</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블(표) rowspan, colspan 연습</title>
+    <link rel="stylesheet" type="text/css" href="./css/style9.css"
+</head>
+<body>
+    <!-- 시각장애인을 위한 언어 설명으로 table을 작성할 때 꼭 추가해주기 -->
+    <table aria-describedby="제주도 방 객실 현황" class="Jeju_Table"> 
+        <figure>
+            <figcaption>
+                <b><i>제주도 방 객실</i></b>
+            </figcaption>
+        </figure>
+        <thead class="Thead_Travel">
+            <tr><th>방 이름</th><th>대상</th><th>크기</th><th>가격</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>유채방</td><td>여성</td><td rowspan="3">4인실</td><td rowspan="4">1인 20,000원</td></tr>
+            <tr><td rowspan="2">동백방</td><td>동성</td>
+                <!--td>4인실</td><td>1인 20,000원</td></tr> -->
+            <tr>
+                <!-- <td></td> -->
+                <td>가족 1팀</td>
+                <!-- <td>4인실</td><td>1인 20,000원</td></tr> -->
+            <tr><td>천혜향방</td><td>-</td><td>2인실</td>
+                <!-- <td>1인 20,000원</td></tr> --> 
+        </tbody>
+        <tfoot class="Tfoot_Travel">
+            <tr><td colspan="4">바깥채 전체를 렌트합니다.</td>
+                <!-- <td>여성</td><td>4인실</td><td>1인 20,000원</td></tr> -->
+            </tfoot>
+        
+    </table>
+</body>
+</html>

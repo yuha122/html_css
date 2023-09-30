@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form1{
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <form name="" action="" method="post" autocomplete="off">
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <ul class="form1">
+                <li>
+                    <label for="id">아이디</label>
+                    <input id="id" type="text" name="id" placeholder="ID 입력" required size="13" minlength="4" maxlength="10" title="4-13특수기호@#$%포함" />
+                </li>
+               <li>
+                    <label for="pwd">비밀번호</label>
+                    <input id="pwd" type="password" name="pwd" placeholder="비밀번호 입력" required size="13" minlength="4" maxlength="10" title="4-13특수기호@#$%포함"/>
+               </li>
+                <li>
+                    <label for="pwd_correct">비밀번호 확인</label>
+                    <input id="pwd_correct" type="password" name="pwd_correct" required  size="13" minlength="4" maxlength="10" title="4-13특수기호@#$%포함"/>
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul class="form1">
+                <li>
+                    <label for="name">이름</label>
+                    <input id="name" type="text" name="name" placeholder="이름 입력" required size="10" />
+                </li>
+                <li>
+                    <label for="email">E-메일 주소</label>
+                    <input id="email" type="email" name="email" placeholder="example@example.com" required />
+                </li>
+                <li>
+                    <label for="tel">연락처</label>
+                    <input id="tel" type="tel" name="tel" placeholder="010-1234-5678" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"/>
+                </li>
+                <li>
+                    <label for="homepage">블로그/홈페이지</label>
+                    <input id="homepage" type="url" name="homepage" placeholder="https://www/example.com" required size="20" />
+                </li>
+            </ul>
+       
+        </fieldset>
+
+        <input type="submit" value="전송하기"
+    </form>
+    
+</body>
+</html>

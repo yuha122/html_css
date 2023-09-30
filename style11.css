@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+*{
+    margin: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+table, th, td{
+    
+    border: 1px solid black;
+    border-collapse: separate;
+}
+
+th{
+    padding:  10px 30px;
+    text-align: center;
+}
+
+td{
+    padding:  10px 30px;
+    text-align: left;
+}

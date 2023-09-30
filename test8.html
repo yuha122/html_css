@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블(표) caption, figcaption 연습</title>
+    <link rel="stylesheet" type="text/css" href="./css/style8.css"
+</head>
+
+<body>
+    <!--2. caption 태그는 테이블 콘텐츠를 가운데정렬하며 "제목" 달기-->
+    <table class="Table_caption">
+        <caption><mark>
+            <b>Modern Browser</b>
+            <p><u><em>국내에서 자주 사용하는 모던 웹 브라우저</em></u></p>
+        </mark></caption>
+        <tr>
+            <th>브라우저</th><th>제조업체</th><th>다운로드</th>
+        </tr>
+        <tr>
+            <th>크롬(Chrome)</th><td>Google</td><td><a href="https://www.google.co.jp/" target = "blank">https://www.Google.com/chrome</a></td>
+        </tr>
+        <tr>
+            <th>파이어 폭스</th><td>Mozile</td><td><a href="https://www.mozile.org/ko.firefox" target = "blank">https://www.mozile.org/lo.firefox</a></td>
+        </tr>
+        <tr>
+            <th>엣지</th><td>Microsoft</td><td><a href="https://www.microsoft/ko-kr/windows/microsoft-edge" target = "blank">https://www.microsoft/ko-kr/windows/microsoft-edge</a></td>
+        </tr>
+    </table>
+    <br><hr><br>
+
+    <!--3. figcaption 태그는 테이블 왼쪽정렬하여 "제목"달기-->
+    <!--figcaption은 이미지 하단에 안내문 달 때 잘 사용함-->
+    <table class="Table_figcaption">
+        <figure>
+            <figcaption>
+                <p><em>국내에서 자주 사용하는 모던 웹 브라우저</em></p>
+            </figcaption>
+        </figure>
+        <tr>
+            <th>브라우저</th><th>제조업체</th><th>다운로드</th>
+        </tr>
+        <tr>
+            <th>크롬(Chrome)</th><td>Google</td><td><a href="https://www.google.co.jp/" target = "blank">https://www.Google.com/chrome</a></td>
+        </tr>
+        <tr>
+            <th>파이어 폭스</th><td>Mozile</td><td><a href="https://www.mozile.org/ko.firefox" target = "blank">https://www.mozile.org/lo.firefox</a></td>
+        </tr>
+        <tr>
+            <th>엣지</th><td>Microsoft</td><td><a href="https://www.microsoft/ko-kr/windows/microsoft-edge" target = "blank">https://www.microsoft/ko-kr/windows/microsoft-edge</a></td>
+        </tr>
+    </table>
+    <br><hr><br>
+
+    <!--복습 문제-->
+    <table class="Table_exe">
+        <caption>
+            <b>재무상태표</b>
+        </caption>
+        <tr>
+            <td rowspan="2">자산:현금,<br>현금외 자산</td><td>부채: 차입금</td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td>자본: 자본금, 이익잉여금</td>
+        </tr>
+    </table>
+
+    <script></script>
+</body>
+</html>

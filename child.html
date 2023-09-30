@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>교보문고 베스트셀러</title>
+    <!--parent.html의 자식문서로 열림(함께 연습)-->
+    
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        body{
+            background-color: #6bce78;
+    
+        }
+        img{
+            /* float: left; 브라우저 화면의 왼쪽에 배치 */
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="./img/교보문고.jpg" alt="교보문고 로고"/><br>
+    <h2><u>교보문고 2023년 7월 베스트셀러 완전 정복</u></h2>
+    <p>[국내도서] 백년의 기억, 베스트셀러 속 명언</p>
+    <p>[좀 더 느리게 걷다보면 보이는 것들]...</p>
+    <p>[버림을 통해 채움을 얻는 방법]...</p>
+    <!--iframe에서 해당 사이트를 보여주는 것을 허용하는 경우(ex.예스24) target 설정 필요없음-->
+    <p>1. <a href="https://www.yes24.com/Product/Goods/106156632">도서 상세보기(현재 부모 화면에 표시)</a></p>
+
+    <!--iframe에서 해당 사이트를 보여주는 것을 거부하는 경우(ex.교보문고, 네이버) target=_top으로 설정해줘야 함-->
+    <p>2. <a href="https://product.kyobobook.co.kr/detail/S000001880473?LINK=NVB&NaPm=ct%3Dlmdb8ck8%7Cci%3D23fda7c5af1dfe851b966b2a09d195ed019270cc%7Ctr%3Dboksl1%7Csn%3D5342564%7Chk%3Da02a4cfb4d05ccd69b90faca6789080d50b52ba4">도서 상세보기(현재 부모화면에서 보이지 않음)</a></p>
+    <p>3. <a href="https://product.kyobobook.co.kr/detail/S000001880473?LINK=NVB&NaPm=ct%3Dlmdb8ck8%7Cci%3D23fda7c5af1dfe851b966b2a09d195ed019270cc%7Ctr%3Dboksl1%7Csn%3D5342564%7Chk%3Da02a4cfb4d05ccd69b90faca6789080d50b52ba4">도서 상세보기(현재 부모화면을 벗어난 전체 화면 표시)</a></p>
+    
+    <!--연습용으로 만든 html 파일을 iframe에서 열어줌-->
+    <p>4. <a href="./test10.html">test10 iframe으로 열기</a></p>
+
+    <!--연습용으로 만든 html 파일을 iframe 밖에서 열어줌-->
+    <p>5. <a href="./test10.html" target="_top">test10 iframe 밖에서 열기</a></p>
+
+</body>
+</html>

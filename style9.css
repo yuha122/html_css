@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+*{
+    margin: 2px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+table, th, td{
+    margin: 10px auto;
+    border: 1px solid black;
+    border-collapse: separate;
+}
+
+.Jeju_Table{
+    margin: auto; /*margin에 대해서 auto값을 주게 되면 table을 가운데로 정렬*/
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: separate;   
+}
+
+th{
+    padding: 15px;
+
+}
+
+td{
+    padding: 15px;
+    text-align: center; /* 콘텐츠를 가운데 정렬 */
+}
+.Thead_Travel{
+    background-color: lightgray;
+}
+.Tfoot_Travel{
+    background-color: lightgray;
+}
+.Thead_School{
+    background-color: lightgreen;
+}
+
+.Tfoot_School{
+    background-color: yellow;
+}
+
